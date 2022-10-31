@@ -1,0 +1,25 @@
+.c-container {
+  display: flex;
+  position:inherit;
+  max-width: 900px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 40px;
+  justify-content: center;
+  padding: 1.5vh;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  &--box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  &--box h2 {
+    display: flex;
+    align-items: center;
+
+  }
+}
+

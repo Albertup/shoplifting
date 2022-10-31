@@ -1,0 +1,71 @@
+.c-header {
+  width:100%;
+  height: 152px;
+  background-color: #fafafa;
+  &--logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+  }
+  &--logo__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &--logo__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #303030;
+    margin-right: 10px;
+  }
+  &--logo__icon p {
+    color: #eeee;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  &--logo__text {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 3px;
+  }
+  &--menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    background: #FFC970;
+    justify-content: center;
+    align-items: center;
+  }
+  &--menu__set {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  &--menu__set a {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+    margin: 0 15px 0 15px;
+  }
+  &--menu__set a:hover {
+    color: #909090;
+  }
+  &--menu__set p {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+

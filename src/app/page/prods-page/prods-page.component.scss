@@ -1,0 +1,58 @@
+.c-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position:inherit;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 40px;
+  justify-content: center;
+  padding: 1.5vh;
+  // background-color: #fafafa;
+  // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.c-container h2 {
+  display: flex;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 40px;
+  padding: 3.5vh;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.c-card {
+  display: flex;
+  flex-direction: column;
+  position:inherit;
+  max-width: 200px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 40px;
+  justify-content: center;
+  padding: 1.5vh;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.c-card span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.c-card button {
+  display: flex;
+  justify-content: center;
+  min-width: 8vh;
+  margin: 1vh 0  1vh 0;
+  background: #222;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0.6vh 0.6vh 0.6vh 0.6vh;
+  border: none;
+  outline: none;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}

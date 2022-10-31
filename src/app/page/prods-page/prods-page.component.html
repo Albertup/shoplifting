@@ -1,0 +1,10 @@
+<div class="c-container">
+  <h2>Listado de productos</h2>
+
+    <div class="c-card" *ngFor="let product of products">
+  <app-list [product]="product"></app-list>
+  <span><button (click)="editButton(product.id)" >Editar</button><button (click)="deleteButton(product.id)">Eliminar</button></span>
+</div>
+
+</div>
+<app-footer-page></app-footer-page>

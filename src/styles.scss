@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/lara-light-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import 'src/app/styles/_primeng.stars.scss';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #303030;
+    background-size: 50%;
+    height: 100vh;
+    background: #CCCCCC;
+    font-family: 'Open Sans', 'Merriweather Sans', sans-serif;
+    // -webkit-text-stroke: 2px black;
+    box-sizing: border-box;
+    font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+
+p {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  }
+
+ul,li {
+    list-style-type:none;
+}
+
+a:link,
+a:visited {
+  text-decoration:none;
+  color: #303030;
+}

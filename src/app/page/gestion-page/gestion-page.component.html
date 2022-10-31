@@ -1,0 +1,54 @@
+
+<div class="c-container">
+    <div class="c-form">
+      <form [formGroup]="newProductForm">
+        <h2>Creación/edición de productos</h2>
+        <div class="c-form--items">
+          <div>
+          <p>Nombre del producto:</p>
+          <input type="text" formControlName="name" placeholder="Por ej: Tiesto para planta">
+          <div *ngIf="newProductForm.get('name')?.hasError('required') && (newProductForm.get('name')?.dirty || submitted)">Este campo es requerido</div>
+          <div *ngIf="newProductForm.get('name')?.hasError('minlength') && (newProductForm.get('name')?.dirty || submitted)">Este campo tiene que tener mas de 3 caracteres</div>
+        </div>
+        <div>
+          <p>Precio:</p>
+          <input type="text" formControlName="price" placeholder="Por ej: 9.50">
+          <div *ngIf="newProductForm.get('name')?.hasError('required') && (newProductForm.get('name')?.dirty || submitted)">Este campo es requerido</div>
+          <div *ngIf="newProductForm.get('name')?.hasError('minlength') && (newProductForm.get('name')?.dirty || submitted)">Este campo tiene que tener hasta 8 caracteres y 2 decimales</div>
+
+        </div>
+        <div>
+          <p>Descripción:</p>
+          <input type="text" formControlName="description" placeholder="Por ej: Lo más vendido este mes">
+          <div *ngIf="newProductForm.get('name')?.hasError('required') && (newProductForm.get('name')?.dirty || submitted)">Este campo es requerido</div>
+          <div *ngIf="newProductForm.get('name')?.hasError('minlength') && (newProductForm.get('name')?.dirty || submitted)">Este campo tiene que tener un número</div>
+
+        </div>
+        <div>
+          <p>Ruta de la imagen:</p>
+          <input type="text" formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg">
+          <div *ngIf="newProductForm.get('name')?.hasError('required') && (newProductForm.get('name')?.dirty || submitted)">Este campo es requerido</div>
+          <div *ngIf="newProductForm.get('name')?.hasError('minlength') && (newProductForm.get('name')?.dirty || submitted)">Este campo tiene que tener mas de 3 caracteres</div>
+
+        </div>
+        <div>
+          <p>Opiniones:</p>
+          <input type="text" formControlName="stars" placeholder="Por ej: 4.28">
+          <div *ngIf="newProductForm.get('name')?.hasError('required') && (newProductForm.get('name')?.dirty || submitted)">Este campo es requerido</div>
+          <div *ngIf="newProductForm.get('name')?.hasError('minlength') && (newProductForm.get('name')?.dirty || submitted)">Este campo ha de ser un número entero del 1 al 5</div>
+
+        </div>
+        <div class="c-form--button">
+          <button type="button" (click)="onSubmit()">Guardar</button>
+        </div>
+      </div>
+      </form>
+    </div>
+    <div class="c-form--border"></div>
+    <div class="c-form--show">
+      <h2>Vista previa del producto</h2>
+      <app-list [product]="newProductForm.value"></app-list>
+    </div>
+
+</div>
+<app-footer-page></app-footer-page>

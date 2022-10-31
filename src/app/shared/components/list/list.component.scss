@@ -1,0 +1,39 @@
+
+.c-card {
+  display: flex;
+  flex-direction: column;
+  position:inherit;
+  max-width: 200px;
+  width: 100%;
+  margin: 0px auto;
+  justify-content: center;
+  padding: 1.5vh;
+}
+.c-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.c-card img {
+  display: flex;
+  flex-wrap: wrap;
+  position:inherit;
+  max-width: 200px;
+  width: 100%;
+  margin: 0px auto;
+  justify-content: center;
+  padding: 1.5vh;
+}
+.c-card p {
+  font-size: 12px;
+  font-weight: 300;
+
+}
+.c-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
